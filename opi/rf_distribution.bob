@@ -1,0 +1,4328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>RF Distribution</name>
+  <macros>
+    <P>HPRF-Distr:SwitchBoard1:sSwitch</P>
+    <SB1>HPRF-Distr:SwitchBoard1:sSwitch</SB1>
+    <SB2>HPRF-Distr:SwitchBoard2:sSwitch</SB2>
+    <SB3>HPRF-Distr:SwitchBoard3:sSwitch</SB3>
+    <WFG>WtrC-Dwtr:WFGuard</WFG>
+  </macros>
+  <width>1200</width>
+  <height>800</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>486</x>
+    <y>660</y>
+    <width>151</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="96.0" y="0.0">
+      </point>
+      <point x="96.0" y="0.0">
+      </point>
+      <point x="150.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_20</name>
+    <x>456</x>
+    <y>186</y>
+    <width>1</width>
+    <height>13</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>672</x>
+    <y>12</y>
+    <width>409</width>
+    <height>697</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="190" green="190" blue="230">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
+    <background_color>
+      <color red="250" green="240" blue="250">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>336</x>
+    <y>630</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_1</name>
+    <x>414</x>
+    <y>432</y>
+    <width>103</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <y>14</y>
+      <width>103</width>
+      <height>24</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_4</name>
+      <x>9</x>
+      <width>78</width>
+      <height>49</height>
+      <points>
+        <point x="77.0" y="0.0">
+        </point>
+        <point x="0.0" y="48.0">
+        </point>
+        <point x="0.0" y="48.0">
+        </point>
+        <point x="0.0" y="48.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_2</name>
+    <x>414</x>
+    <y>288</y>
+    <width>97</width>
+    <height>25</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>97</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <y>12</y>
+      <width>97</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="96.0" y="0.0">
+        </point>
+        <point x="96.0" y="0.0">
+        </point>
+        <point x="96.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_4</name>
+    <x>336</x>
+    <y>270</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_5</name>
+    <x>336</x>
+    <y>426</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_6</name>
+    <x>444</x>
+    <y>198</y>
+    <width>25</width>
+    <height>50</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>25</width>
+      <height>50</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>13</x>
+      <width>1</width>
+      <height>51</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_8</name>
+    <x>420</x>
+    <y>72</y>
+    <width>72</width>
+    <height>66</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_1</name>
+      <x>14</x>
+      <y>13</y>
+      <width>9</width>
+      <height>9</height>
+      <points>
+        <point x="0.0" y="8.0">
+        </point>
+        <point x="3.0" y="0.0">
+        </point>
+        <point x="8.0" y="5.0">
+        </point>
+        <point x="8.0" y="5.0">
+        </point>
+        <point x="8.0" y="5.0">
+        </point>
+      </points>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>Arc</name>
+      <x>13</x>
+      <y>5</y>
+      <width>46</width>
+      <height>46</height>
+      <start_angle>45.0</start_angle>
+      <total_angle>100.0</total_angle>
+      <line_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse</name>
+      <x>3</x>
+      <width>64</width>
+      <height>62</height>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>34</x>
+      <y>61</y>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <y>28</y>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>68</x>
+      <y>28</y>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_9</name>
+    <x>414</x>
+    <y>624</y>
+    <width>73</width>
+    <height>67</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_1</name>
+      <x>15</x>
+      <y>44</y>
+      <width>9</width>
+      <height>9</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="3.0" y="8.0">
+        </point>
+        <point x="8.0" y="3.0">
+        </point>
+        <point x="8.0" y="3.0">
+        </point>
+        <point x="8.0" y="3.0">
+        </point>
+      </points>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="arc" version="2.0.0">
+      <name>Arc</name>
+      <x>13</x>
+      <y>13</y>
+      <width>47</width>
+      <height>47</height>
+      <start_angle>215.0</start_angle>
+      <total_angle>100.0</total_angle>
+      <line_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse</name>
+      <x>3</x>
+      <y>3</y>
+      <width>65</width>
+      <height>63</height>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>35</x>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <y>33</y>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>69</x>
+      <y>33</y>
+      <width>3</width>
+      <height>3</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Purple" red="128" green="0" blue="255">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_11</name>
+    <x>438</x>
+    <y>516</y>
+    <width>26</width>
+    <height>50</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>26</width>
+      <height>50</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="255" green="0" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>14</x>
+      <width>1</width>
+      <height>51</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+        <point x="0.0" y="50.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>LOAD L1</text>
+    <x>408</x>
+    <y>324</y>
+    <width>86</width>
+    <height>21</height>
+    <font>
+      <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>LOAD L2</text>
+    <x>408</x>
+    <y>384</y>
+    <width>86</width>
+    <height>21</height>
+    <font>
+      <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>O2</text>
+    <x>264</x>
+    <y>678</y>
+    <width>28</width>
+    <height>21</height>
+    <font>
+      <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>O1</text>
+    <x>264</x>
+    <y>48</y>
+    <width>28</width>
+    <height>21</height>
+    <font>
+      <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>456</x>
+    <y>138</y>
+    <width>1</width>
+    <height>13</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_18</name>
+    <x>516</x>
+    <y>276</y>
+    <width>43</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)06:sOK</pv_name>
+      <x>8</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF6</text>
+      <x>6</x>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_23</name>
+    <x>520</x>
+    <y>630</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>492</x>
+    <y>102</y>
+    <width>85</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="84.0" y="0.0">
+      </point>
+      <point x="84.0" y="0.0">
+      </point>
+      <point x="84.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>384</x>
+    <y>300</y>
+    <width>31</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>384</x>
+    <y>456</y>
+    <width>31</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>384</x>
+    <y>660</y>
+    <width>31</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="19.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>450</x>
+    <y>612</y>
+    <width>1</width>
+    <height>13</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_7</name>
+    <x>384</x>
+    <y>102</y>
+    <width>37</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="25.0" y="0.0">
+      </point>
+      <point x="36.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l1_O2</name>
+    <x>198</x>
+    <y>102</y>
+    <width>138</width>
+    <height>559</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="66.0" y="0.0">
+      </point>
+      <point x="54.0" y="0.0">
+      </point>
+      <point x="36.0" y="0.0">
+      </point>
+      <point x="102.0" y="558.0">
+      </point>
+      <point x="137.0" y="558.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l1_to_O2" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv1==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B8</pv_name>
+        <pv_name>$(SB1).BC</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l1_O1</name>
+    <x>198</x>
+    <y>102</y>
+    <width>139</width>
+    <height>1</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l1_to_O1" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv1==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B2</pv_name>
+        <pv_name>$(SB1).B4</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l1_L1</name>
+    <x>198</x>
+    <y>102</y>
+    <width>139</width>
+    <height>199</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="67.0" y="0.0">
+      </point>
+      <point x="55.0" y="0.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="70.0" y="198.0">
+      </point>
+      <point x="138.0" y="198.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l1_to_L1" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv1==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B0</pv_name>
+        <pv_name>$(SB1).B4</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l1_L2</name>
+    <x>204</x>
+    <y>102</y>
+    <width>133</width>
+    <height>354</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="64.0" y="0.0">
+      </point>
+      <point x="52.0" y="0.0">
+      </point>
+      <point x="66.0" y="0.0">
+      </point>
+      <point x="66.0" y="353.0">
+      </point>
+      <point x="132.0" y="353.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l1_to_L2" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv1==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B8</pv_name>
+        <pv_name>$(SB1).BE</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l2_O1</name>
+    <x>198</x>
+    <y>102</y>
+    <width>139</width>
+    <height>271</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="270.0">
+      </point>
+      <point x="67.0" y="270.0">
+      </point>
+      <point x="55.0" y="270.0">
+      </point>
+      <point x="70.0" y="270.0">
+      </point>
+      <point x="66.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l2_to_O1" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv2==1) || (pv1==1 &amp;&amp; pv3==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B2</pv_name>
+        <pv_name>$(SB1).B3</pv_name>
+        <pv_name>$(SB1).B5</pv_name>
+        <pv_name>$(SB1).B6</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l2_O2</name>
+    <x>198</x>
+    <y>369</y>
+    <width>139</width>
+    <height>292</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="67.0" y="0.0">
+      </point>
+      <point x="55.0" y="0.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="72.0" y="291.0">
+      </point>
+      <point x="138.0" y="291.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l2_to_O2" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv2==1) || (pv1==1 &amp;&amp; pv3==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B9</pv_name>
+        <pv_name>$(SB1).BA</pv_name>
+        <pv_name>$(SB1).BC</pv_name>
+        <pv_name>$(SB1).BD</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l2_L1</name>
+    <x>198</x>
+    <y>300</y>
+    <width>139</width>
+    <height>73</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="72.0">
+      </point>
+      <point x="67.0" y="72.0">
+      </point>
+      <point x="55.0" y="72.0">
+      </point>
+      <point x="70.0" y="72.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l2_to_L1" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv2==1) || (pv1==1 &amp;&amp; pv3==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B0</pv_name>
+        <pv_name>$(SB1).B1</pv_name>
+        <pv_name>$(SB1).B5</pv_name>
+        <pv_name>$(SB1).B6</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l2_L2</name>
+    <x>198</x>
+    <y>372</y>
+    <width>139</width>
+    <height>85</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="67.0" y="0.0">
+      </point>
+      <point x="55.0" y="0.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="70.0" y="84.0">
+      </point>
+      <point x="138.0" y="84.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l2_to_L2" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pv0==1 &amp;&amp; pv2==1) || (pv1==1 &amp;&amp; pv3==1)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B9</pv_name>
+        <pv_name>$(SB1).BA</pv_name>
+        <pv_name>$(SB1).BE</pv_name>
+        <pv_name>$(SB1).BF</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l3_O2</name>
+    <x>198</x>
+    <y>660</y>
+    <width>139</width>
+    <height>1</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l3_to_O2" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).BB</pv_name>
+        <pv_name>$(SB1).BD</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l3_O1</name>
+    <x>198</x>
+    <y>102</y>
+    <width>139</width>
+    <height>559</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="558.0">
+      </point>
+      <point x="67.0" y="558.0">
+      </point>
+      <point x="55.0" y="558.0">
+      </point>
+      <point x="30.0" y="558.0">
+      </point>
+      <point x="102.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l3_to_O1" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B3</pv_name>
+        <pv_name>$(SB1).B7</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l3_L1</name>
+    <x>198</x>
+    <y>300</y>
+    <width>139</width>
+    <height>358</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="357.0">
+      </point>
+      <point x="67.0" y="357.0">
+      </point>
+      <point x="55.0" y="357.0">
+      </point>
+      <point x="70.0" y="357.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l3_to_L1" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).B1</pv_name>
+        <pv_name>$(SB1).B4</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Connection_l3_L2</name>
+    <x>198</x>
+    <y>456</y>
+    <width>139</width>
+    <height>203</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="202.0">
+      </point>
+      <point x="67.0" y="202.0">
+      </point>
+      <point x="55.0" y="202.0">
+      </point>
+      <point x="70.0" y="202.0">
+      </point>
+      <point x="70.0" y="0.0">
+      </point>
+      <point x="138.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="l3_to_L2" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1 &amp;&amp; pv1==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB1).BB</pv_name>
+        <pv_name>$(SB1).BF</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>BUNKER</text>
+    <x>710</x>
+    <y>24</y>
+    <width>140</width>
+    <height>37</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Purple" red="128" green="0" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_16</name>
+    <x>564</x>
+    <y>102</y>
+    <width>80</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="79.0" y="0.0">
+      </point>
+      <point x="79.0" y="0.0">
+      </point>
+      <point x="78.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_30</name>
+    <x>486</x>
+    <y>198</y>
+    <width>43</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)02:sOK</pv_name>
+      <x>8</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF2</text>
+      <x>6</x>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_31</name>
+    <x>522</x>
+    <y>432</y>
+    <width>43</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)05:sOK</pv_name>
+      <x>8</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF5</text>
+      <x>6</x>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_32</name>
+    <x>432</x>
+    <y>12</y>
+    <width>43</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)01:sOK</pv_name>
+      <x>8</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF1</text>
+      <x>6</x>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_33</name>
+    <x>480</x>
+    <y>516</y>
+    <width>43</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)03:sOK</pv_name>
+      <x>8</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF3</text>
+      <x>6</x>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_34</name>
+    <x>432</x>
+    <y>696</y>
+    <width>38</width>
+    <height>48</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>WF6</name>
+      <pv_name>$(WFG)04:sOK</pv_name>
+      <x>2</x>
+      <y>20</y>
+      <width>25</width>
+      <height>25</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>WF4</text>
+      <width>37</width>
+      <height>19</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_35</name>
+    <x>444</x>
+    <y>150</y>
+    <width>37</width>
+    <height>37</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <width>21</width>
+      <height>42</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>21</x>
+      <y>20</y>
+      <width>16</width>
+      <points>
+        <point x="15.0" y="19.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <x>21</x>
+      <width>16</width>
+      <points>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="0.0" y="19.0">
+        </point>
+        <point x="0.0" y="19.0">
+        </point>
+        <point x="0.0" y="19.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_36</name>
+    <x>438</x>
+    <y>576</y>
+    <width>37</width>
+    <height>39</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <width>21</width>
+      <height>43</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>21</x>
+      <y>21</y>
+      <width>16</width>
+      <height>21</height>
+      <points>
+        <point x="15.0" y="20.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <x>21</x>
+      <width>16</width>
+      <height>21</height>
+      <points>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="0.0" y="20.0">
+        </point>
+        <point x="0.0" y="20.0">
+        </point>
+        <point x="0.0" y="20.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_21</name>
+    <x>450</x>
+    <y>564</y>
+    <width>1</width>
+    <height>13</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+      <point x="0.0" y="12.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_3</name>
+    <x>336</x>
+    <y>72</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>Coaxial
+Line</text>
+    <x>690</x>
+    <y>504</y>
+    <width>61</width>
+    <height>37</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_22</name>
+    <x>522</x>
+    <y>72</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_15</name>
+    <text>Waveguide</text>
+    <x>678</x>
+    <y>114</y>
+    <width>80</width>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_9</name>
+    <x>756</x>
+    <y>246</y>
+    <width>37</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="7.0" y="0.0">
+      </point>
+      <point x="7.0" y="0.0">
+      </point>
+      <point x="36.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color name="Header Background" red="94" green="151" blue="230">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_11</name>
+    <x>594</x>
+    <y>102</y>
+    <width>199</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="174.0" y="0.0">
+      </point>
+      <point x="198.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color name="Header Background" red="94" green="151" blue="230">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_25</name>
+    <x>864</x>
+    <y>30</y>
+    <width>211</width>
+    <height>295</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>211</width>
+      <height>289</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Dark Gray Border" red="190" green="190" blue="190">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_13</name>
+      <x>18</x>
+      <y>30</y>
+      <width>175</width>
+      <height>79</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="ellipse" version="2.0.0">
+        <name>Ellipse_1</name>
+        <x>144</x>
+        <width>31</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color name="Dark Gray Border" red="190" green="190" blue="190">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Label Background" red="255" green="255" blue="212">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle</name>
+        <x>18</x>
+        <width>143</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="128" green="0" blue="255">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Label Background" red="255" green="255" blue="212">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>Ellipse</name>
+        <width>31</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color name="Dark Gray Border" red="190" green="190" blue="190">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="255" green="255" blue="183">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>Cavity #01</text>
+        <x>42</x>
+        <y>18</y>
+        <width>115</width>
+        <height>43</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_14</name>
+      <x>18</x>
+      <y>180</y>
+      <width>175</width>
+      <height>79</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="ellipse" version="2.0.0">
+        <name>Ellipse_1</name>
+        <x>144</x>
+        <width>31</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color name="Dark Gray Border" red="190" green="190" blue="190">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Label Background" red="255" green="255" blue="212">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle</name>
+        <x>18</x>
+        <width>143</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="128" green="0" blue="255">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Label Background" red="255" green="255" blue="212">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="ellipse" version="2.0.0">
+        <name>Ellipse</name>
+        <width>31</width>
+        <height>79</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color name="Dark Gray Border" red="190" green="190" blue="190">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="255" green="255" blue="183">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>Cavity #02</text>
+        <x>42</x>
+        <y>12</y>
+        <width>115</width>
+        <height>55</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>CRYOMODULE</text>
+      <x>30</x>
+      <y>6</y>
+      <width>102</width>
+      <height>16</height>
+      <font>
+        <font family="DejaVu Sans" style="BOLD" size="12.871287128712872">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_12</name>
+    <x>840</x>
+    <y>102</y>
+    <width>55</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="31.0" y="0.0">
+      </point>
+      <point x="31.0" y="0.0">
+      </point>
+      <point x="54.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color name="Header SubColor" red="255" green="255" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_10</name>
+    <x>840</x>
+    <y>246</y>
+    <width>55</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="31.0" y="0.0">
+      </point>
+      <point x="31.0" y="0.0">
+      </point>
+      <point x="54.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color name="Header SubColor" red="255" green="255" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_15</name>
+    <x>720</x>
+    <y>246</y>
+    <width>37</width>
+    <height>169</height>
+    <visible>false</visible>
+    <points>
+      <point x="36.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="72.0">
+      </point>
+      <point x="0.0" y="168.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Connected" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB3).B1</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_17</name>
+    <x>636</x>
+    <y>660</y>
+    <width>43</width>
+    <height>1</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="42.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Connected" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB2).B1</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_29</name>
+    <x>600</x>
+    <y>642</y>
+    <width>37</width>
+    <height>37</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>37</width>
+      <height>37</height>
+      <line_width>5</line_width>
+      <line_color>
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_15</name>
+      <y>18</y>
+      <width>37</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+      </points>
+      <line_width>10</line_width>
+      <line_color>
+        <color red="30" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_16</name>
+      <x>18</x>
+      <y>18</y>
+      <width>1</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>10</line_width>
+      <line_color>
+        <color red="30" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_22</name>
+    <x>618</x>
+    <y>678</y>
+    <width>1</width>
+    <height>50</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="18.0">
+      </point>
+      <point x="0.0" y="18.0">
+      </point>
+      <point x="0.0" y="49.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Connected" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB2).B0</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>O2</text>
+    <x>642</x>
+    <y>630</y>
+    <width>22</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>O1</text>
+    <x>582</x>
+    <y>678</y>
+    <width>22</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_28</name>
+    <x>702</x>
+    <y>414</y>
+    <width>37</width>
+    <height>37</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>37</width>
+      <height>37</height>
+      <line_width>5</line_width>
+      <line_color>
+        <color name="Text" red="25" green="25" blue="25">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_15</name>
+      <y>18</y>
+      <width>37</width>
+      <height>1</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+        <point x="36.0" y="0.0">
+        </point>
+      </points>
+      <line_width>10</line_width>
+      <line_color>
+        <color red="30" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_16</name>
+      <x>18</x>
+      <width>1</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>10</line_width>
+      <line_color>
+        <color red="30" green="0" blue="0">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_18</name>
+    <x>672</x>
+    <y>432</y>
+    <width>31</width>
+    <height>229</height>
+    <points>
+      <point x="0.0" y="228.0">
+      </point>
+      <point x="12.0" y="228.0">
+      </point>
+      <point x="12.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_19</name>
+    <x>738</x>
+    <y>432</y>
+    <width>73</width>
+    <height>157</height>
+    <visible>false</visible>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="18.0" y="0.0">
+      </point>
+      <point x="18.0" y="156.0">
+      </point>
+      <point x="72.0" y="156.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Connected" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>true</value>
+        </exp>
+        <pv_name>$(SB3).B0</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>O2</text>
+    <x>732</x>
+    <y>384</y>
+    <width>22</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_14</name>
+    <text>O1</text>
+    <x>768</x>
+    <y>432</y>
+    <width>22</width>
+    <height>24</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>864</x>
+    <y>528</y>
+    <width>211</width>
+    <height>145</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Dark Gray Border" red="190" green="190" blue="190">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_12</name>
+    <x>882</x>
+    <y>546</y>
+    <width>175</width>
+    <height>79</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse_1</name>
+      <x>144</x>
+      <width>31</width>
+      <height>79</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color name="Dark Gray Border" red="190" green="190" blue="190">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Label Background" red="255" green="255" blue="212">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>18</x>
+      <width>143</width>
+      <height>79</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Label Background" red="255" green="255" blue="212">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="ellipse" version="2.0.0">
+      <name>Ellipse</name>
+      <width>31</width>
+      <height>79</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color name="Dark Gray Border" red="190" green="190" blue="190">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="255" green="255" blue="183">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Cavity #01</text>
+      <x>54</x>
+      <y>18</y>
+      <width>103</width>
+      <height>49</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>HNOSS</text>
+    <x>924</x>
+    <y>636</y>
+    <width>52</width>
+    <height>16</height>
+    <font>
+      <font family="DejaVu Sans" style="BOLD" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_14</name>
+    <x>852</x>
+    <y>588</y>
+    <width>37</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="13.0" y="0.0">
+      </point>
+      <point x="13.0" y="0.0">
+      </point>
+      <point x="36.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <line_color>
+      <color name="Header SubColor" red="255" green="255" blue="0">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_27</name>
+    <x>810</x>
+    <y>562</y>
+    <width>43</width>
+    <height>37</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>15</y>
+      <width>43</width>
+      <height>21</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>21</x>
+      <width>21</width>
+      <height>16</height>
+      <points>
+        <point x="20.0" y="0.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>21</width>
+      <height>16</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="20.0" y="15.0">
+        </point>
+        <point x="20.0" y="15.0">
+        </point>
+        <point x="20.0" y="15.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_26</name>
+    <x>792</x>
+    <y>72</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_24</name>
+    <x>792</x>
+    <y>216</y>
+    <width>49</width>
+    <height>43</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <y>18</y>
+      <width>49</width>
+      <height>25</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_6</name>
+      <x>24</x>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="24.0" y="0.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+        <point x="0.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_7</name>
+      <width>25</width>
+      <height>19</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+        <point x="24.0" y="18.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="30" green="144" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>15</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_26</name>
+    <text>Switch Board 2</text>
+    <x>570</x>
+    <y>600</y>
+    <width>102</width>
+    <height>37</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_48</name>
+    <x>30</x>
+    <y>24</y>
+    <width>169</width>
+    <height>109</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>I1</text>
+      <x>72</x>
+      <width>20</width>
+      <height>21</height>
+      <font>
+        <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_39</name>
+      <y>36</y>
+      <width>169</width>
+      <height>73</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rounded Rectangle</name>
+        <width>169</width>
+        <height>73</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="128" green="0" blue="255">
+          </color>
+        </line_color>
+        <corner_width>16</corner_width>
+        <corner_height>16</corner_height>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>RF Power Station
+Tetrode
+Electrosys</text>
+        <width>169</width>
+        <height>73</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED</name>
+        <pv_name>HPRF-Esys:hpa1:sPwrOn</pv_name>
+        <x>132</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="Major" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_color>
+          <color red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color red="192" green="192" blue="192">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_49</name>
+    <x>30</x>
+    <y>300</y>
+    <width>169</width>
+    <height>109</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rounded Rectangle_1</name>
+      <y>36</y>
+      <width>169</width>
+      <height>73</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <corner_width>16</corner_width>
+      <corner_height>16</corner_height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>RF Power Station
+Not Used</text>
+      <y>36</y>
+      <width>169</width>
+      <height>73</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>I2</text>
+      <x>72</x>
+      <width>20</width>
+      <height>21</height>
+      <font>
+        <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_50</name>
+    <x>30</x>
+    <y>582</y>
+    <width>169</width>
+    <height>109</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_40</name>
+      <y>36</y>
+      <width>169</width>
+      <height>73</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rounded Rectangle_2</name>
+        <width>169</width>
+        <height>73</height>
+        <line_width>0</line_width>
+        <line_color>
+          <color red="128" green="0" blue="255">
+          </color>
+        </line_color>
+        <corner_width>16</corner_width>
+        <corner_height>16</corner_height>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_2</name>
+        <text>RF Power Station
+Tetrode
+DB Elettronica</text>
+        <width>169</width>
+        <height>73</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED_1</name>
+        <pv_name>HPRF-DBE1:APS:sOn</pv_name>
+        <x>132</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="Major" red="255" green="0" blue="0">
+          </color>
+        </off_color>
+        <on_color>
+          <color red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color red="192" green="192" blue="192">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>I3</text>
+      <x>72</x>
+      <width>20</width>
+      <height>21</height>
+      <font>
+        <font name="Example Title" family="Sans" style="BOLD" size="17.821782178217823">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_27</name>
+    <text>Switch Board 3</text>
+    <x>762</x>
+    <y>384</y>
+    <width>102</width>
+    <height>37</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

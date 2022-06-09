@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>RF Power Stations</name>
+  <macros>
+    <P>HPRF</P>
+  </macros>
+  <width>1600</width>
+  <height>680</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>RF Power Stations</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>310</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Esys</name>
+    <macros>
+      <DISPLAY>esys/esys-top</DISPLAY>
+      <MASTER_STN></MASTER_STN>
+      <MID1>$(SUBS):hpa1</MID1>
+      <MID2>$(SUBS):hpa2</MID2>
+      <SUBS>Esys</SUBS>
+      <T></T>
+      <TITLE>Electrosys</TITLE>
+      <reset>cmdReset</reset>
+      <start>cmdStart</start>
+      <stop>cmdStop</stop>
+    </macros>
+    <file>rf-power.bob</file>
+    <y>70</y>
+    <width>800</width>
+    <height>550</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>DBE</name>
+    <macros>
+      <DISPLAY>dbe/DBE_main</DISPLAY>
+      <MASTER_STN>1</MASTER_STN>
+      <MID1>$(SUBS)1:Ampl</MID1>
+      <MID2>$(SUBS)2:Ampl</MID2>
+      <SUBS>DBE</SUBS>
+      <T>Tot</T>
+      <TITLE>DBE</TITLE>
+      <reset>CmdReset</reset>
+      <start>CmdOn</start>
+      <stop>CmdOff</stop>
+    </macros>
+    <file>rf-power.bob</file>
+    <x>800</x>
+    <y>70</y>
+    <width>800</width>
+    <height>550</height>
+  </widget>
+</display>

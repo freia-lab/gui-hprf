@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>RF-station</name>
+  <macros>
+    <nr>1</nr>
+  </macros>
+  <height>500</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>State</name>
+    <pv_name>$(P)-$(SUBS):Ampl:VisuState</pv_name>
+    <x>314</x>
+    <y>113</y>
+    <width>150</width>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <square>true</square>
+    <states>
+      <state>
+        <value>0</value>
+        <label>Mains OFF</label>
+        <color>
+          <color name="Read_Background" red="230" green="235" blue="232">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>OFF</label>
+        <color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>Standby</label>
+        <color>
+          <color red="0" green="91" blue="255">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>3</value>
+        <label>ON</label>
+        <color>
+          <color name="GREEN" red="61" green="216" blue="61">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Control  </name>
+    <x>495</x>
+    <y>78</y>
+    <width>257</width>
+    <height>175</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="action_button" version="3.0.0">
+      <name>Start</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Start</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:$(start)</pv_name>
+      <y>63</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="Locality" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:sLocal</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)$(P)-$(SUBS)$(MASTER_STN):Ampl:$(start)
+Start the station (all but high voltage on)</tooltip>
+      <show_confirm_dialog>true</show_confirm_dialog>
+      <confirm_message>Are your sure you want to start the RF station?</confirm_message>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Stop</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Stop</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:$(stop)</pv_name>
+      <y>103</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="Locality" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:sLocal</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(actions)$(P)-$(SUBS)$(MASTER_STN):Ampl:$(stop)
+Stop - turn off all</tooltip>
+      <show_confirm_dialog>true</show_confirm_dialog>
+      <confirm_message>Are your sure you want to stop the RF station? The filament will be turned off.</confirm_message>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>HV On/Off</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>HV ON/OFF</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(SUBS):Ampl:cmdStandby</pv_name>
+      <x>117</x>
+      <y>63</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="Locality" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:sLocal</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(P)-$(SUBS):Ampl:cmdStandby
+Turn Off/On the high voltage (toggle between ON and Standby state)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Reset</description>
+        </action>
+      </actions>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:$(reset)</pv_name>
+      <x>117</x>
+      <y>103</y>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="Locality" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:sLocal</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(P)-$(SUBS)$(MASTER_STN):Ampl:$(reset)
+Reset Faults
+</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Status Local/Remote</name>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:sLocal</pv_name>
+      <x>2</x>
+      <y>11</y>
+      <width>215</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="232">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="BackgroundColor" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pvInt0==1">
+            <value>
+              <color name="WARNING" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Total Power</name>
+    <x>23</x>
+    <y>104</y>
+    <width>251</width>
+    <height>343</height>
+    <style>1</style>
+    <foreground_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_10</name>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:s$(T)FwdPwr</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>110</width>
+      <height>212</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>400.0</maximum>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_11</name>
+      <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:s$(T)ReflPwr</pv_name>
+      <x>122</x>
+      <y>5</y>
+      <width>110</width>
+      <height>212</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>6000.0</maximum>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Panel 2_13</name>
+      <x>140</x>
+      <y>222</y>
+      <width>95</width>
+      <height>95</height>
+      <style>2</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_30</name>
+        <text>Total Refl Pwr [W]</text>
+        <x>5</x>
+        <y>2</y>
+        <width>81</width>
+        <height>51</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_7</name>
+        <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:s$(T)ReflPwr</pv_name>
+        <x>5</x>
+        <y>55</y>
+        <width>83</width>
+        <height>32</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="26.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Panel 2_12</name>
+      <x>23</x>
+      <y>222</y>
+      <width>95</width>
+      <height>95</height>
+      <style>2</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="211" green="236" blue="181">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_29</name>
+        <text>Total Fwd Pwr [kW]</text>
+        <x>4</x>
+        <y>2</y>
+        <width>81</width>
+        <height>51</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_6</name>
+        <pv_name>$(P)-$(SUBS)$(MASTER_STN):Ampl:s$(T)FwdPwr</pv_name>
+        <x>4</x>
+        <y>56</y>
+        <width>83</width>
+        <height>32</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="26.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>0</precision>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Forward Power</name>
+    <macros>
+      <DIR>Fwd</DIR>
+      <MAX>400</MAX>
+    </macros>
+    <x>300</x>
+    <y>263</y>
+    <width>203</width>
+    <height>184</height>
+    <style>1</style>
+    <foreground_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>System 1_2</name>
+      <macros>
+        <nr>1</nr>
+      </macros>
+      <width>102</width>
+      <height>162</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_32</name>
+        <text>Sys $(nr)</text>
+        <height>21</height>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_9</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>128</y>
+        <width>80</width>
+        <height>24</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="211" green="236" blue="181">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+      <widget type="tank" version="2.0.0">
+        <name>Progress Bar Template_13</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>22</y>
+        <width>60</width>
+        <height>100</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="13.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <fill_color>
+          <color red="211" green="236" blue="181">
+          </color>
+        </fill_color>
+        <actions>
+        </actions>
+        <limits_from_pv>false</limits_from_pv>
+        <maximum>$(MAX)</maximum>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>System 1_8</name>
+      <macros>
+        <nr>2</nr>
+      </macros>
+      <x>100</x>
+      <width>102</width>
+      <height>162</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_43</name>
+        <text>Sys $(nr)</text>
+        <height>21</height>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_20</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>128</y>
+        <width>80</width>
+        <height>24</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="211" green="236" blue="181">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+      <widget type="tank" version="2.0.0">
+        <name>Progress Bar Template_24</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>22</y>
+        <width>60</width>
+        <height>100</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="13.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <fill_color>
+          <color red="211" green="236" blue="181">
+          </color>
+        </fill_color>
+        <actions>
+        </actions>
+        <limits_from_pv>false</limits_from_pv>
+        <maximum>$(MAX)</maximum>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_10</name>
+    <text>System State
+</text>
+    <x>317</x>
+    <y>90</y>
+    <width>147</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_11</name>
+    <text>General Status</text>
+    <x>314</x>
+    <y>150</y>
+    <width>150</width>
+    <height>24</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>Interlocks_1</name>
+    <pv_name>$(P)-$(SUBS):Ampl:sFault</pv_name>
+    <x>314</x>
+    <y>172</y>
+    <width>150</width>
+    <height>30</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <square>true</square>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <states>
+      <state>
+        <value>0</value>
+        <label>OK</label>
+        <color>
+          <color name="OK" red="61" green="216" blue="61">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>WARNING</label>
+        <color>
+          <color name="WARNING" red="252" green="242" blue="17">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>FAULT</label>
+        <color>
+          <color name="ERROR" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>$(TITLE)</text>
+    <x>28</x>
+    <y>15</y>
+    <width>654</width>
+    <height>41</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="32.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Details</name>
+    <actions>
+      <action type="open_display">
+        <file>$(DISPLAY).bob</file>
+        <target>window</target>
+        <description>Details</description>
+      </action>
+    </actions>
+    <x>312</x>
+    <y>220</y>
+    <width>150</width>
+    <height>29</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Reflected Power</name>
+    <macros>
+      <DIR>Refl</DIR>
+      <MAX>6000</MAX>
+    </macros>
+    <x>540</x>
+    <y>263</y>
+    <width>203</width>
+    <height>184</height>
+    <style>1</style>
+    <foreground_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <widget type="group" version="2.0.0">
+      <name>System 1_9</name>
+      <macros>
+        <nr>1</nr>
+      </macros>
+      <width>102</width>
+      <height>162</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_44</name>
+        <text>Sys $(nr)</text>
+        <height>21</height>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>System 1_10</name>
+      <macros>
+        <nr>2</nr>
+      </macros>
+      <x>100</x>
+      <width>102</width>
+      <height>162</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_45</name>
+        <text>Sys $(nr)</text>
+        <height>21</height>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_22</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>128</y>
+        <width>80</width>
+        <height>24</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+          </color>
+        </background_color>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+      </widget>
+      <widget type="tank" version="2.0.0">
+        <name>Progress Bar Template_26</name>
+        <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+        <x>10</x>
+        <y>21</y>
+        <width>60</width>
+        <height>100</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="13.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <fill_color>
+          <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+          </color>
+        </fill_color>
+        <actions>
+        </actions>
+        <limits_from_pv>false</limits_from_pv>
+        <maximum>$(MAX)</maximum>
+      </widget>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template_25</name>
+      <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+      <x>10</x>
+      <y>21</y>
+      <width>60</width>
+      <height>100</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </fill_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+      <maximum>$(MAX)</maximum>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_21</name>
+      <pv_name>$(P)-$(MID$(nr)):s$(DIR)Pwr</pv_name>
+      <x>10</x>
+      <y>127</y>
+      <width>80</width>
+      <height>24</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BACKGROUND" red="225" green="192" blue="188">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+  </widget>
+</display>
